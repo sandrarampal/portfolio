@@ -73,12 +73,11 @@ const objectDistance = 4;
 
 mesh1.position.y = -objectDistance * 0;
 mesh2.position.y = -objectDistance * 1;
-// plane1.position.y = -objectDistance * 1.1;
 mesh3.position.y = -objectDistance * 2;
 
-mesh1.position.x = 2;
-mesh2.position.x = -2;
-mesh3.position.x = 2;
+mesh1.position.x = 1.7;
+mesh2.position.x = -2.2;
+mesh3.position.x = 1.6;
 
 /**
  * Particles

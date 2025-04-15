@@ -101,3 +101,7 @@ section:nth-child(odd) {
   width: 100%;
   object-fit: cover;
 }
+
+.all-projects div:nth-child(4) img {
+  object-position: left;
+}
