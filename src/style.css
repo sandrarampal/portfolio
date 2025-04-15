@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #1e1a20;
+}
+
+.webgl {
+  position: fixed;
+  top: 0;
+  left: 0;
+  outline: none;
+  width: 1224px;
+}
+
+.title {
+  font-size: 10vmin;
+  color: lightcyan;
+}
+
+h2 {
+  color: lightcyan;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  font-family: "Cabin", sans-serif;
+  color: #ffeded;
+  text-transform: uppercase;
+  font-size: 6vmin;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.portfolio {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 60px;
+}
+
+.contact {
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+
+.contact h2 {
+  margin-bottom: 30px;
+}
+
+span {
+  text-transform: lowercase;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffeded;
+}
+
+section:nth-child(odd) {
+  justify-content: flex-end;
+}
+
+.projects h2 {
+  margin-bottom: 20px;
+}
+
+.projects-div {
+  background-color: white;
+  width: 230px;
+  height: 160px;
+}
+
+.projects {
+  flex-direction: column;
+  bottom: 150px;
+  left: 670px;
+  width: 800px;
+  padding: 10px;
+}
+
+.all-projects {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.all-projects img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
