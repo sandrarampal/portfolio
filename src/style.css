@@ -30,12 +30,15 @@ h2 {
   align-items: center;
   height: 100vh;
   position: relative;
+  padding-left: 10%;
   font-family: "Cabin", sans-serif;
   color: #ffeded;
+  padding-right: 10%;
+}
+
+h1 {
   text-transform: uppercase;
   font-size: 6vmin;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 
 .portfolio {
@@ -51,11 +54,15 @@ h2 {
   justify-content: center;
 }
 
-.contact h2 {
+.contact h1 {
   margin-bottom: 30px;
 }
 
-span {
+.contact a:hover {
+  color: aliceblue;
+}
+
+.contact span {
   text-transform: lowercase;
   font-size: 20px;
   padding-left: 20px;
@@ -71,19 +78,33 @@ section:nth-child(odd) {
   justify-content: flex-end;
 }
 
-.projects h2 {
-  margin-bottom: 20px;
+.projects h1 {
+  margin-bottom: 40px;
 }
 
 .projects-div {
   background-color: white;
   width: 230px;
-  height: 160px;
+  height: 290px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  border-radius: 7px;
+}
+h3 {
+  color: black;
+  padding: 10px 10px 0px 10px;
+}
+
+.projects-div:hover {
+  transform: scale(1.1);
 }
 
 .projects {
   flex-direction: column;
-  bottom: 150px;
+  bottom: 140px;
   left: 670px;
   width: 800px;
   padding: 10px;
@@ -93,13 +114,20 @@ section:nth-child(odd) {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 40px;
 }
 
 .all-projects img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+}
+
+.all-projects span {
+  color: black;
+  font-size: 16px;
+  text-align: justify;
+  padding: 10px;
 }
 
 .all-projects div:nth-child(4) img {

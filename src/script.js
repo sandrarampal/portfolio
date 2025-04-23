@@ -8,13 +8,13 @@ import gsap from "gsap";
 const gui = new GUI();
 
 const parameters = {
-  materialColor: "#ffeded",
+  materialColor: "#FFE3D8",
 };
 
-gui.addColor(parameters, "materialColor").onChange(() => {
-  material.color.set(parameters.materialColor);
-  particlesMaterial.color.set(parameters.materialColor);
-});
+// gui.addColor(parameters, "materialColor").onChange(() => {
+//   material.color.set(parameters.materialColor);
+//   particlesMaterial.color.set(parameters.materialColor);
+// });
 
 /**
  * Base
@@ -59,24 +59,20 @@ const mesh1 = new THREE.Mesh(
   new THREE.TorusGeometry(0.8, 0.4, 16, 60),
   material
 );
-const mesh2 = new THREE.Mesh(new THREE.DodecahedronGeometry(1, 0), material);
 const mesh3 = new THREE.Mesh(
   new THREE.TorusKnotGeometry(0.7, 0.3, 100, 16),
   material
 );
-// const plane1 = new THREE.Mesh(new THREE.PlaneGeometry(1.2, 0.8), material);
-scene.add(mesh1, mesh2, mesh3);
+scene.add(mesh1, mesh3);
 
-const sectionMeshes = [mesh1, mesh2, mesh3];
+const sectionMeshes = [mesh1, mesh3];
 
-const objectDistance = 4;
+const objectDistance = 8;
 
 mesh1.position.y = -objectDistance * 0;
-mesh2.position.y = -objectDistance * 1;
 mesh3.position.y = -objectDistance * 2;
 
 mesh1.position.x = 1.7;
-mesh2.position.x = -2.2;
 mesh3.position.x = 1.6;
 
 /**
@@ -94,7 +90,7 @@ particlesGeometry.setAttribute(
 const particlesMaterial = new THREE.PointsMaterial({
   color: parameters.materialColor,
   sizeAttenuation: true,
-  size: Math.random() * 0.3,
+  size: 0.2,
 });
 particlesMaterial.transparent = true;
 particlesMaterial.alphaMap = particlesTexture;
@@ -106,9 +102,7 @@ scene.add(particles);
 for (let i = 0; i < particlesCount; i++) {
   const i3 = i * 3;
   positions[i3] = (Math.random() - 0.5) * 10;
-  positions[i3 + 1] =
-    objectDistance * 0.5 -
-    Math.random() * objectDistance * sectionMeshes.length;
+  positions[i3 + 1] = objectDistance * 0.5 - Math.random() * objectDistance * 3;
   positions[i3 + 2] = (Math.random() - 0.5) * 10;
 }
 
