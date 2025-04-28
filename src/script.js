@@ -5,7 +5,7 @@ import gsap from "gsap";
 /**
  * Debug
  */
-const gui = new GUI();
+// const gui = new GUI();
 
 const parameters = {
   materialColor: "#FFE3D8",
