@@ -70,7 +70,7 @@ const sectionMeshes = [mesh1, mesh3];
 const objectDistance = 8;
 
 mesh1.position.y = -objectDistance * 0;
-mesh3.position.y = -objectDistance * 2;
+mesh3.position.y = -objectDistance * 2.15;
 
 mesh1.position.x = 1.7;
 mesh3.position.x = 1.6;

@@ -103,7 +103,7 @@ h3 {
 
 .projects {
   flex-direction: column;
-  bottom: 0px;
+  top: 100px;
   left: 200px;
   width: 1200px;
   padding: 10px;
@@ -131,4 +131,8 @@ h3 {
 
 .all-projects div:nth-child(4) img {
   object-position: left;
+}
+
+.contact {
+  top: 120px;
 }
